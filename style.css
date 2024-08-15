@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.stopwatch {
+    text-align: center;
+}
+
+#display {
+    font-size: 4em; /* Larger display size */
+    margin-bottom: 20px;
+    color: #333;
+    transition: color 0.5s ease; /* Animation */
+}
+
+.buttons button {
+    font-size: 1.2em;
+    padding: 12px 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease; /* Animation */
+}
+
+#start {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.4);
+}
+#stop {
+    background-color: #f44336;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+}
+#pause {
+    background-color: #ff9800;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.4);
+}
+#resume {
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.4);
+}
+#lap {
+    background-color: #2196F3;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.4);
+}
+#reset {
+    background-color: #9E9E9E;
+    color: white;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4);
+}
+
+.buttons button:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+.buttons button:active {
+    transform: scale(0.95); /* Slightly shrink the button on click */
+    background-color: #333; /* Darker shade on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow effect on click */
+}
+
+.laps {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.lap {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Animation */
+}
+
+.lap:nth-child(odd) {
+    background-color: #f9f9f9; /* Alternating row colors */
+}
+
+.lap:hover {
+    background-color: #e0e0e0; /* Highlight on hover */
+}

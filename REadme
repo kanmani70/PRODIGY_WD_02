@@ -1,0 +1,10 @@
+Overview
+This project is a simple web-based stopwatch application that allows users to start, stop, pause, resume, and reset a timer. It also features lap time recording and supports multiple themes with customizable display sizes, button colors, and sounds.
+
+Features
+Start, Stop, Pause, Resume: Control the stopwatch with these buttons.
+Lap Recording: Record lap times during the stopwatch operation.
+Display Milliseconds: View milliseconds along with hours, minutes, and seconds.
+Theme Support: Toggle between light and dark themes.
+Sound Effects: Play sounds for button clicks, lap records, and resets.
+Responsive Design: Ensures a good user experience on various devices.
